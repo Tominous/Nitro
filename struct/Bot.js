@@ -39,9 +39,9 @@ const Bot = () => {
                 }
             })
 
-            /*bot.on("debug", msg => {
+            bot.on("debug", msg => {
                 if (!/heartbeat/i.test(msg)) console.log(msg);
-            });*/
+            });
             bot.on("error", console.error)
             return resolve(bot);
         }).catch(err => reject(err))
